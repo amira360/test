@@ -1,1 +1,1 @@
-DOCKER_BUILDKIT=1 docker build .
+HEALTHCHECK CMD curl --fail http://localhost:8080 || exit 1
